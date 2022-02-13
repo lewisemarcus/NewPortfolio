@@ -14,7 +14,7 @@ No installation required.
 Link to Website: https://lewisemarcus.github.io/NewPortfolio/
 
 Built with HTML and CSS
-![Photo of Website](images\Portfolio.png)
+![Photo of Website](images/Portfolio.png)
 
 # Credits
 ## Contributors
