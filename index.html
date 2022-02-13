@@ -15,14 +15,15 @@
 <body>
     <header>
         <div class="uk-position-relative uk-box-shadow-medium uk-animation-fade">
-            <h1 class="uk-heading-small uk-heading-line uk-text-center uk-background-muted" style="margin-bottom: 0px; padding-top: 20px;">
+            <h1 class="uk-heading-small uk-heading-line uk-text-center uk-background-muted"
+                style="margin-bottom: 0px; padding-top: 20px;">
                 <span>Marcus Lewis: Developer's Portfolio</span>
             </h1>
             <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav" style="padding-left: 30px;">
                         <li class="uk-text-center">
-                            <a class="uk-button-text" href="#">About Me</a>
+                            <a class="uk-button-text" href="#aboutMe" uk-scroll>About Me</a>
                         </li>
                         <li>
                             <a class="uk-button-text" href="#">Projects</a>
@@ -30,17 +31,19 @@
                                 <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                                     <div>
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-nav-header">Group</li>
-                                            <li><a href="#">Pollution Map</a></li>
+                                            <li class="uk-nav-header" onmouseover="this.style.cursor = 'default';">Group
+                                            </li>
+                                            <li><a href="#pollutionMap" uk-scroll="offset: 150">Pollution Map</a></li>
                                         </ul>
                                     </div>
                                     <div>
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-nav-header">Solo</li>
-                                            <li><a href="#">Weather Dashboard</a></li>
-                                            <li><a href="#">Day Planner</a></li>
-                                            <li><a href="#">Code Quiz</a></li>
-                                            <li><a href="#">Password Generator</a></li>
+                                            <li class="uk-nav-header" onmouseover="this.style.cursor = 'default';">Solo
+                                            </li>
+                                            <li><a href="#weather" uk-scroll="offset: 300">Weather Dashboard</a></li>
+                                            <li><a href="#planner" uk-scroll="offset: 300">Day Planner</a></li>
+                                            <li><a href="#quiz" uk-scroll="offset: 300">Code Quiz</a></li>
+                                            <li><a href="#password" uk-scroll="offset: 300">Password Generator</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -55,12 +58,15 @@
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-nav-header uk-text-center">Contact</li>
-                                    <li class="uk-text-center"><a href="#">Phone: </a></li>
-                                    <li class="uk-text-center"><a href="#">Email: </a></li>
-                                    <li class="uk-text-center"><a href="#">Github: </a></li>
+                                    <li class="uk-text-center"><a href="tel:6619929522">Phone: (661) 992-9522</a></li>
+                                    <li class="uk-text-center"><a href="mailto: lewisemarcus@gmail.com">Email:
+                                            lewisemarcus@gmail.com</a></li>
+                                    <li class="uk-text-center"><a href="https://github.com/lewisemarcus"
+                                            target="_blank">GitHub Profile: lewisemarcus</a></li>
                                     <li class="uk-nav-divider"></li>
                                     <li class="uk-nav-header uk-text-center">Resume</li>
-                                    <li class="uk-text-center"><a href="#">Resume (LinkedIn)</a></li>
+                                    <li class="uk-text-center"><a style="justify-content: center;"
+                                            href="Files\Marcus_Lewis_Resume.pdf" target="_blank">Resume (PDF)</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -72,36 +78,54 @@
     </header>
     <main>
         <div class="uk-container" style="margin-top: 110px">
-            <div class="uk-section uk-section-muted uk-dark">
-                <div class="uk-align-center uk-card uk-card-default uk-card-hover uk-width-1-1" style="max-width: 90%;" uk-scrollspy="cls:uk-animation-fade">
+            <div id="aboutMe" class="uk-section uk-section-muted uk-dark"
+                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                <div class="uk-align-center uk-card uk-card-default uk-card-hover uk-width-1-1"
+                    style="max-width: 90%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;"
+                    uk-scrollspy="cls:uk-animation-fade">
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
                             <div class="uk-width-auto">
                                 <img class="uk-border-rounded" width="80" height="80" src="images/ProfilePic.png">
                             </div>
                             <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">About Marcus Lewis</h3>
-                                <p class="uk-text-meta uk-margin-remove-top">Welcome to my Portfolio!</p>
+                                <h3 class="uk-card-title uk-margin-remove-bottom"
+                                    onmouseover="this.style.cursor = 'default';">About Marcus Lewis</h3>
+                                <p class="uk-text-meta uk-margin-remove-top"
+                                    onmouseover="this.style.cursor = 'default';">Welcome to my Portfolio!</p>
                             </div>
                         </div>
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title uk-text-break">Education</h3>
-                        <p>Hello, my name is Marcus Lewis, and welcome to my Portfolio webpage, 
-                            where you will find my most recent and what I consider my best works in regard to development.
-                            My education consists of a Bachelor's degree in English, received from the University of California, Irvine, and I have received
-                            a certificate noting my completion of the Full Stack Coding Boot Camp, also from the University of California, Irvine.
+                        <h3 class="uk-card-title uk-text-break" onmouseover="this.style.cursor = 'default';">Education
+                        </h3>
+                        <p>Hello, my name is Marcus Lewis, and welcome to my Portfolio webpage,
+                            where you will find my most recent and what I consider my best works in regard to
+                            development.
+                            My education consists of a Bachelor's degree in English, received from the University of
+                            California, Irvine, and I have received
+                            a certificate noting my completion of the Full Stack Coding Boot Camp, also from the
+                            University of California, Irvine.
                         </p>
-                        <h3 class="uk-card-title uk-text-break">Work Experience</h3>
+                        <h3 class="uk-card-title uk-text-break" onmouseover="this.style.cursor = 'default';">Work
+                            Experience</h3>
                         <p>
-                            My work experience began in 2013, when I first landed an internship as a Programming Assistant at Lockheed Martin.
-                            Although short, I was able to grasp the basics of CATIA and C++. My line of work shifted toward laboratory work and technical media
-                            during my college years, and I have learned a number of different skills such as video editing, film production, and handling laboratory
-                            grade equipment. After my college years, and receiving my Bachelor's degree, I was able to land a position in the financial field, specifically
-                            an Underwriter position. I enjoyed learning about the ins and outs of how businesses operate, understanding cashflow statements, 
-                            and exposing myself to a number of other financial markers that signal trustworthiness of an entity. After my experience as an Underwriter,
-                            I now work as a Content Analyst at Bitvore, and my work entails reviewing content pertaining to municipal bonds. I am very interested in the financial
-                            field, and would love to combine my knowledge of the financial world and development, as well as continue learning about both fields!
+                            My work experience began in 2013, when I first landed an internship as a Programming
+                            Assistant at Lockheed Martin.
+                            Although short, I was able to grasp the basics of CATIA and C++. My line of work shifted
+                            toward laboratory work and technical media
+                            during my college years, and I have learned a number of different skills such as video
+                            editing, film production, and handling laboratory
+                            grade equipment. After my college years, and receiving my Bachelor's degree, I was able to
+                            land a position in the financial field, specifically
+                            an Underwriter position. I enjoyed learning about the ins and outs of how businesses
+                            operate, understanding cashflow statements,
+                            and exposing myself to a number of other financial markers that signal trustworthiness of an
+                            entity. After my experience as an Underwriter,
+                            I now work as a Content Analyst at Bitvore, and my work entails reviewing content pertaining
+                            to municipal bonds. I am very interested in the financial
+                            field, and would love to combine my knowledge of the financial world and development, as
+                            well as continue learning about both fields!
                         </p>
                     </div>
                     <div class="uk-card-footer">
@@ -109,120 +133,159 @@
                         <br>
                     </div>
                 </div>
+                <div id="pollutionMap"></div>
             </div>
+            <br>
+            <br>
+            <br>
             <div class="uk-section uk-section-default uk-dark">
-                <div uk-scrollspy="cls:uk-animation-slide-top-medium" class="uk-card uk-card-small uk-card-hover uk-card-default"
-                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                <div class="uk-card-badge uk-label">Solo</div>
-                <div class="uk-card-body uk-background-muted"
-                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                    <h3 class="uk-padding-small uk-text-center uk-text-break"><a class="uk-card-title uk-button uk-button-text">Bluer Skies: Air Quality Index Map</a>
-                    </h3>
-                    <p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt.</p>
-                    <div class="uk-card-footer uk-text-center">
-                        <a href="#" class="uk-button  uk-button-text">Project Link</a>
+                <div uk-scrollspy="cls:uk-animation-slide-top-medium"
+                    class="uk-card uk-card-small uk-card-hover uk-card-default"
+                    style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                    <div class="uk-card-badge uk-label">Group</div>
+                    <div class="uk-card-body uk-background-muted"
+                        style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <h3 class="uk-padding-small uk-text-center uk-text-break"><a
+                                class="uk-card-title uk-button uk-button-text"
+                                onmouseover="this.style.cursor = 'default';">Bluer Skies: Air Quality Index Map</a>
+                        </h3>
+                        <p class="uk-text-center">This website displays a scrollable/interactive map with a grid of
+                            colored points
+                            representing fine particle pollution levels.
+                            It uses (quasi) unlimited free APIs.</p>
+                        <div class="uk-card-footer uk-text-center">
+                            <a href="https://github.com/lewisemarcus/PollutionMap" target="_blank"
+                                class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
+                        </div>
+                    </div>
+                    <div class="uk-card-media-bottom uk-button">
+                        <a href="https://lewisemarcus.github.io/PollutionMap/" target="_blank">
+                            <img src="images/Capture.PNG" alt="Photo of Bluer Skies">
+                        </a>
                     </div>
                 </div>
-                <div class="uk-card-media-bottom uk-button">
-
-                    <img src="images/Capture.PNG" alt="Photo of Bluer Skies">
-                </div>
             </div>
-            </div>
-            <div class="uk-section uk-section-muted uk-dark">
+            <br>
+            <br>
+            <br>
+            <div class="uk-section uk-section-muted uk-dark"
+                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                 <div class="uk-padding-large uk-flex-center uk-child-width-expand@s uk-text-center" uk-grid>
                     <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
                         <div>
-                            <div uk-scrollspy="cls:uk-animation-slide-left" class="uk-card uk-card-small uk-card-hover uk-card-default"
+                            <div id="weather" uk-scrollspy="cls:uk-animation-slide-left"
+                                class="uk-card uk-card-small uk-card-hover uk-card-default"
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                                 <div class="uk-card-badge uk-label">Solo</div>
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                                    <h3 class="uk-padding-small uk-text-break"><a class="uk-card-title uk-button-text uk-button">Weather Dashboard: See Any
-                                        City's 5 Day Forecast</a>
+                                    <h3 class="uk-padding-small uk-text-break"><a
+                                            class="uk-card-title uk-button-text uk-button"
+                                            onmouseover="this.style.cursor = 'default';">Weather Dashboard: See Any
+                                            City's 5 Day Forecast</a>
                                     </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
+                                    <p>This web application allows a user to search any city of their choosing and
+                                        receive a 5-Day forecast relative to the time zone of the city.</p>
                                     <div class="uk-card-footer uk-text-center">
-                                        <a href="#" class="uk-button  uk-button-text">Project Link</a>
+                                        <a href="https://github.com/lewisemarcus/WeatherDashboard" target="_blank"
+                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
                                     </div>
                                 </div>
                                 <div class="uk-card-media-bottom uk-button">
-
-                                    <img src="images/WeatherDash.png" alt="">
+                                    <a href="https://lewisemarcus.github.io/WeatherDashboard/" target="_blank">
+                                        <img src="images/WeatherDash.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div uk-scrollspy="cls:uk-animation-slide-right" class="uk-card uk-card-default uk-card-hover uk-card-small"
+                            <div id="planner" uk-scrollspy="cls:uk-animation-slide-right"
+                                class="uk-card uk-card-default uk-card-hover uk-card-small"
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                                     <div class="uk-card-badge uk-label">Solo</div>
-                                    <h3 class="uk-padding-small uk-text-break"><a class="uk-button uk-button-text uk-card-title">Day Planner: Plan Your Week</a>
+                                    <h3 class="uk-padding-small uk-text-break"><a
+                                            class="uk-button uk-button-text uk-card-title"
+                                            onmouseover="this.style.cursor = 'default';">Day Planner: Plan Your Week</a>
                                     </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
+                                    <p>The Day Planner website will allow a user to edit a daily planner that spans most
+                                        hours of the work-day(9AM-6PM).</p>
                                     <div class="uk-card-footer uk-text-center">
-                                        <a href="#" class="uk-button  uk-button-text">Project Link</a>
+                                        <a href="https://github.com/lewisemarcus/Day-Planner" target="_blank"
+                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
                                     </div>
                                 </div>
                                 <div class="uk-card-media-bottom uk-button">
-                                    <img src="images/DayPlanner.png" alt="">
+                                    <a href="https://lewisemarcus.github.io/Day-Planner/" target="_blank">
+                                        <img src="images/DayPlanner.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div uk-scrollspy="cls:uk-animation-slide-left" class="uk-card uk-background-muted uk-card-small uk-card-hover uk-card-default"
+                            <div id="quiz" uk-scrollspy="cls:uk-animation-slide-left"
+                                class="uk-card uk-background-muted uk-card-small uk-card-hover uk-card-default"
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                                 <div class="uk-card-badge uk-label">Solo</div>
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                                    <h3 class="uk-padding-small uk-text-break"><a class="uk-button-text uk-button uk-card-title">Code Quiz: Test Your JS
-                                        Knowledge</a>
+                                    <h3 class="uk-padding-small uk-text-break"><a
+                                            class="uk-button-text uk-button uk-card-title"
+                                            onmouseover="this.style.cursor = 'default';">Code Quiz: Test Your JS
+                                            Knowledge</a>
                                     </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
+                                    <p>In the Code Quiz web application, a user is able to take a short, timed quiz
+                                        testing their knowledge of JavaScript. Incorrect answers will decrease the time
+                                        left, which corresponds to a user's score.</p>
                                     <div class="uk-card-footer uk-text-center">
-                                        <a href="#" class="uk-button uk-button-text">Project Link</a>
+                                        <a href="https://github.com/lewisemarcus/CodeQuiz" target="_blank"
+                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
                                         <br>
                                         <br>
                                     </div>
                                 </div>
                                 <div class="uk-card-media-bottom uk-button">
-                                    <img src="images/CodeQuiz.png" alt="">
+                                    <a href="https://lewisemarcus.github.io/CodeQuiz/" target="_blank">
+                                        <img src="images/CodeQuiz.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div uk-scrollspy="cls:uk-animation-slide-right" class="uk-card uk-card-default uk-card-hover uk-card-small"
+                            <div id="password" uk-scrollspy="cls:uk-animation-slide-right"
+                                class="uk-card uk-card-default uk-card-hover uk-card-small"
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                                     <div class="uk-card-badge uk-label">Solo</div>
-                                    <h3 class="uk-text-break uk-padding-small"><a class="uk-button uk-card-title uk-button-text">Password Generator: Secure
-                                        Password Generator</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt.</p>
+                                    <h3 class="uk-text-break uk-padding-small"><a
+                                            class="uk-button uk-card-title uk-button-text"
+                                            onmouseover="this.style.cursor = 'default';">Password Generator: Secure
+                                            Password Generator</a></h3>
+                                    <p>The Password Generator web application will allow a user to create a random
+                                        password based on parameters chosen by the user.</p>
                                     <div class="uk-card-footer uk-text-center">
-                                        <a href="#" class="uk-button  uk-button-text">Project Link</a>
+                                        <a href="https://github.com/lewisemarcus/PasswordGenerator" target="_blank"
+                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
                                     </div>
                                 </div>
                                 <div class="uk-card-media-bottom uk-button">
-                                    <img src="images/PasswordGenerator.png" alt="">
+                                    <a href="https://lewisemarcus.github.io/PasswordGenerator/" target="_blank">
+                                        <img src="images/PasswordGenerator.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </main>
-    <footer>
-
+    <footer class="uk-text-center uk-text-bold uk- uk-background-primary uk-padding-small" style="color: white; padding-bottom: 1px;">
+        <p>
+            <strong>© Marcus Lewis™</strong>
+            Portfolio. All Rights Reserved.
+        </p>
     </footer>
-
 </body>
