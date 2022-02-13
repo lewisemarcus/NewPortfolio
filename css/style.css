@@ -15,6 +15,9 @@ svg {
     #navRight {
         margin-left: 20vw;
     }
+    #navList {
+        padding-right: 0px; 
+    }
 }
 @media screen and (max-width: 430px) {
     #navRight {
