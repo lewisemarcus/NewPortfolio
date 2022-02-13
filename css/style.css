@@ -1,6 +1,9 @@
 #hamburger {
     display: none;
 }
+body {
+    overflow-x: hidden;
+}
 #aboutMe {
     margin-top: 110px;
 }
@@ -9,6 +12,9 @@ svg {
    min-height: 20px !important; 
 }
 @media screen and (max-width: 640px) {
+    body {
+        overflow-x: hidden;
+    }
     #hamburger {
         display: block;
     }
