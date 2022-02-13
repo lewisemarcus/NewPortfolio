@@ -15,17 +15,17 @@
 <body>
     <header>
         <div class="uk-position-relative uk-box-shadow-medium uk-animation-fade">
-            <h1 class="uk-heading-small uk-heading-line uk-text-center uk-background-muted" style="margin-bottom: 0px">
+            <h1 class="uk-heading-small uk-heading-line uk-text-center uk-background-muted" style="margin-bottom: 0px; padding-top: 20px;">
                 <span>Marcus Lewis: Developer's Portfolio</span>
             </h1>
             <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
                 <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a href="#">About Me</a>
+                    <ul class="uk-navbar-nav" style="padding-left: 30px;">
+                        <li class="uk-text-center">
+                            <a class="uk-button-text" href="#">About Me</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a class="uk-button-text" href="#">Projects</a>
                             <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
                                 <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                                     <div>
@@ -49,17 +49,18 @@
                     </ul>
                 </div>
                 <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a href="#">Contact Information & Resume</a>
+                    <ul class="uk-navbar-nav" style="padding-right: 30px;">
+                        <li class="uk-active">
+                            <a class="uk-text-center uk-button-text" href="#">Contact Information & Resume</a>
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Phone: </a></li>
-                                    <li><a href="#">Email: </a></li>
-                                    <li><a href="#">Github: </a></li>
+                                    <li class="uk-nav-header uk-text-center">Contact</li>
+                                    <li class="uk-text-center"><a href="#">Phone: </a></li>
+                                    <li class="uk-text-center"><a href="#">Email: </a></li>
+                                    <li class="uk-text-center"><a href="#">Github: </a></li>
                                     <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Resume (LinkedIn)</a></li>
+                                    <li class="uk-nav-header uk-text-center">Resume</li>
+                                    <li class="uk-text-center"><a href="#">Resume (LinkedIn)</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -71,104 +72,145 @@
     </header>
     <main>
         <div class="uk-container" style="margin-top: 110px">
-            <div class="uk-animation-slide-top uk-card uk-card-large uk-card-default uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-margin"
-                uk-grid>
-                <div class="uk-card-media-left uk-cover-container" style="object-fit: contain;">
-                    <img src="images/Capture.PNG" alt="" uk-cover>
-                    <canvas width="1200" height="1200"></canvas>
-                </div>
-                <div class="uk-background-muted">
+            <div class="uk-section uk-section-muted uk-dark">
+                <div class="uk-align-center uk-card uk-card-default uk-card-hover uk-width-1-1" style="max-width: 90%;" uk-scrollspy="cls:uk-animation-fade">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-rounded" width="80" height="80" src="images/ProfilePic.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">About Marcus Lewis</h3>
+                                <p class="uk-text-meta uk-margin-remove-top">Welcome to my Portfolio!</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="uk-card-body">
-                        <div class="uk-card-badge uk-label">Group</div>
-                        <div class="uk-card-title">
-                            <h3 class="uk-card-title uk-text-break">Bluer Skies: Interactive Air Pollution Map</h3>
-                        </div> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <div class="uk-card-footer uk-text-center" style="padding-top: 150px;">
-                        <a href="#" class="uk-button uk-button-text">Project Link</a>
+                    <div class="uk-card-footer">
+                        <br>
+                        <br>
                     </div>
                 </div>
-
             </div>
-            <div class="uk-padding-large uk-flex-center uk-child-width-expand@s uk-text-center" uk-grid>
-                <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-animation-slide-left uk-card uk-card-small uk-card-hover uk-card-default">
-                            <div class="uk-card-media-top">
-                                
-                                <img src="images/WeatherDash.png" alt="">
+            <div class="uk-section uk-section-default uk-dark">
+                <div uk-scrollspy="cls:uk-animation-slide-top" class=" uk-card uk-card-large uk-card-default uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                    style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;"
+                    uk-grid>
+                    <div class="uk-card-media-left uk-button uk-cover-container"
+                        style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                        <img src="images/Capture.PNG" alt=""
+                            style="max-width: 100%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;"
+                            uk-cover>
+                        <canvas width="1400" height="1200"
+                            style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;"></canvas>
+                    </div>
+                    <div class="uk-background-muted"
+                        style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                        <div class="uk-card-body">
+                            <div class="uk-card-badge uk-label">Group</div>
+                            <div class="uk-card-title uk-button-text">
+                                <h3 class="uk-card-title uk-text-break">Bluer Skies: Interactive Air Pollution Map</h3>
                             </div>
-                            <div class="uk-card-badge uk-label">Solo</div>
-                            <div class="uk-card-body uk-background-muted">
-                                <h3 class="uk-card-title uk-padding-small uk-text-break">Weather Dashboard: See Any
-                                    City's 5 Day Forecast
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                                <div class="uk-card-footer uk-text-center">
-                                    <a href="#" class="uk-button  uk-button-text">Project Link</a>
-                                </div>
-                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                        </div>
+                        <div class="uk-card-footer uk-text-center">
+                            <a href="#" class="uk-button uk-button-text">Project Link</a>
                         </div>
                     </div>
-                    <div>
-                        <div class="uk-animation-slide-right uk-card uk-card-default uk-card-hover uk-card-small">
-                            <div class="uk-card-body uk-background-muted">
-                                <div class="uk-card-badge uk-label">Solo</div>
-                                <h3 class="uk-card-title uk-padding-small uk-text-break">Day Planner: Plan Your Week
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                                <div class="uk-card-footer uk-text-center">
-                                    <a href="#" class="uk-button  uk-button-text">Project Link</a>
-                                </div>
-                            </div>
-                            <div class="uk-card-media-bottom">
-                                <img src="images/DayPlanner.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-animation-slide-left uk-card uk-background-muted uk-card-small uk-card-hover uk-card-default">
-                            <div class="uk-card-media-top">
-                                <img src="images/CodeQuiz.png" alt="">
-                            </div>
-                            <div class="uk-card-badge uk-label">Solo</div>
-                            <div class="uk-card-body uk-background-muted">
-                                <h3 class="uk-card-title uk-padding-small uk-text-break">Code Quiz: Test Your JS
-                                    Knowledge
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                                <div class="uk-card-footer uk-text-center">
-                                    <a href="#" class="uk-button uk-button-text">Project Link</a>
-                                    <br>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-animation-slide-right uk-card uk-card-default uk-card-hover uk-card-small">
-                            <div class="uk-card-body uk-background-muted">
-                                <div class="uk-card-badge uk-label">Solo</div>
-                                <h3 class="uk-card-title uk-text-break uk-padding-small">Password Generator: Secure
-                                    Password Generator</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt.</p>
-                                <div class="uk-card-footer uk-text-center">
-                                    <a href="#" class="uk-button  uk-button-text">Project Link</a>
-                                </div>
-                            </div>
-                            <div class="uk-card-media-bottom">
-                                <img src="images/PasswordGenerator.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+                </div>
+            </div>
+            <div class="uk-section uk-section-muted uk-dark">
+                <div class="uk-padding-large uk-flex-center uk-child-width-expand@s uk-text-center" uk-grid>
+                    <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                        <div>
+                            <div uk-scrollspy="cls:uk-animation-slide-left" class="uk-card uk-card-small uk-card-hover uk-card-default"
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <div class="uk-card-badge uk-label">Solo</div>
+                                <div class="uk-card-body uk-background-muted"
+                                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                                    <h3 class="uk-card-title uk-padding-small uk-button-text uk-text-break">Weather Dashboard: See Any
+                                        City's 5 Day Forecast
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                    <div class="uk-card-footer uk-text-center">
+                                        <a href="#" class="uk-button  uk-button-text">Project Link</a>
+                                    </div>
+                                </div>
+                                <div class="uk-card-media-bottom uk-button">
+
+                                    <img src="images/WeatherDash.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div uk-scrollspy="cls:uk-animation-slide-right" class="uk-card uk-card-default uk-card-hover uk-card-small"
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <div class="uk-card-body uk-background-muted"
+                                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                                    <div class="uk-card-badge uk-label">Solo</div>
+                                    <h3 class="uk-button-text uk-card-title uk-padding-small uk-text-break">Day Planner: Plan Your Week
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                    <div class="uk-card-footer uk-text-center">
+                                        <a href="#" class="uk-button  uk-button-text">Project Link</a>
+                                    </div>
+                                </div>
+                                <div class="uk-card-media-bottom uk-button">
+                                    <img src="images/DayPlanner.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div uk-scrollspy="cls:uk-animation-slide-left" class="uk-card uk-background-muted uk-card-small uk-card-hover uk-card-default"
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <div class="uk-card-badge uk-label">Solo</div>
+                                <div class="uk-card-body uk-background-muted"
+                                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                                    <h3 class="uk-button-text uk-card-title uk-padding-small uk-text-break">Code Quiz: Test Your JS
+                                        Knowledge
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                    <div class="uk-card-footer uk-text-center">
+                                        <a href="#" class="uk-button uk-button-text">Project Link</a>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="uk-card-media-bottom uk-button">
+                                    <img src="images/CodeQuiz.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div uk-scrollspy="cls:uk-animation-slide-right" class="uk-card uk-card-default uk-card-hover uk-card-small"
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                <div class="uk-card-body uk-background-muted"
+                                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                                    <div class="uk-card-badge uk-label">Solo</div>
+                                    <h3 class="uk-button-text uk-card-title uk-text-break uk-padding-small">Password Generator: Secure
+                                        Password Generator</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                    <div class="uk-card-footer uk-text-center">
+                                        <a href="#" class="uk-button  uk-button-text">Project Link</a>
+                                    </div>
+                                </div>
+                                <div class="uk-card-media-bottom uk-button">
+                                    <img src="images/PasswordGenerator.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
