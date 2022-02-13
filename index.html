@@ -12,7 +12,7 @@
         <script src="js/script.js"></script>
     </head>
 <body>
-    <header>
+    <header id="header">
         <div class="uk-position-relative uk-box-shadow-medium uk-animation-fade">
             <h1 class="uk-heading-small uk-heading-line uk-text-center uk-background-muted"
                 style="margin-bottom: 0px; padding-top: 20px;">
@@ -42,7 +42,7 @@
                                     </div>
                                     <div>
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-nav-header" onmouseover="this.style.cursor = 'default';">Solo
+                                            <li class="uk-nav-header" onmouseover="this.style.cursor = 'default';" onmouseover="this.style.cursor = 'default';">Solo
                                             </li>
                                             <li><a href="#weather" uk-scroll="offset: 300">Weather Dashboard</a></li>
                                             <li><a href="#planner" uk-scroll="offset: 300">Day Planner</a></li>
@@ -146,7 +146,7 @@
                 <div uk-scrollspy="cls:uk-animation-slide-top-medium"
                     class="uk-card uk-card-small uk-card-hover uk-card-default"
                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                    <div class="uk-card-badge uk-label">Group</div>
+                    <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Group</div>
                     <div class="uk-card-body uk-background-muted"
                         style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                         <h3 class="uk-padding-small uk-text-center uk-text-break"><a
@@ -180,7 +180,7 @@
                             <div id="weather" uk-scrollspy="cls:uk-animation-slide-left"
                                 class="uk-card uk-card-small uk-card-hover uk-card-default"
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                                <div class="uk-card-badge uk-label">Solo</div>
+                                <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Solo</div>
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                                     <h3 class="uk-padding-small uk-text-break"><a
@@ -208,7 +208,7 @@
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                                    <div class="uk-card-badge uk-label">Solo</div>
+                                    <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Solo</div>
                                     <h3 class="uk-padding-small uk-text-break"><a
                                             class="uk-button uk-button-text uk-card-title"
                                             onmouseover="this.style.cursor = 'default';">Day Planner: Plan Your Week</a>
@@ -231,7 +231,7 @@
                             <div id="quiz" uk-scrollspy="cls:uk-animation-slide-left"
                                 class="uk-card uk-background-muted uk-card-small uk-card-hover uk-card-default"
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                                <div class="uk-card-badge uk-label">Solo</div>
+                                <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Solo</div>
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                                     <h3 class="uk-padding-small uk-text-break"><a
@@ -262,7 +262,7 @@
                                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                                    <div class="uk-card-badge uk-label">Solo</div>
+                                    <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Solo</div>
                                     <h3 class="uk-text-break uk-padding-small"><a
                                             class="uk-button uk-card-title uk-button-text"
                                             onmouseover="this.style.cursor = 'default';">Password Generator: Secure
@@ -285,6 +285,8 @@
                 </div>
             </div>
         </div>
+        <a class="uk-align-center uk-text-center" style="margin-bottom: 0px" href="#header" uk-totop uk-scroll></a>
+        <p class="uk-text-muted uk-text-center" style="margin-top: 0px" onmouseover="this.style.cursor = 'default';">(To Top)</p>
     </main>
     <footer class="uk-text-center uk-text-bold uk- uk-background-primary uk-padding-small" style="color: white; padding-bottom: 1px;">
         <p>
