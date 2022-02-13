@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <head>
         <title>Marcus Lewis's Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
-
 <body>
     <header>
         <div class="uk-position-relative uk-box-shadow-medium uk-animation-fade">
@@ -19,9 +18,14 @@
                 style="margin-bottom: 0px; padding-top: 20px;">
                 <span>Marcus Lewis: Developer's Portfolio</span>
             </h1>
-            <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav" style="padding-left: 30px;">
+            <nav id="hamburger" class="uk-align-right uk-navbar uk-navbar-container">
+                <div class="uk-navbar-left ">
+                    <a class="uk-navbar-toggle" style="padding-left: 100vw" uk-toggle="target: #nav" uk-navbar-toggle-icon href="#"></a>
+                </div>
+            </nav>
+            <nav id="nav" class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
+                <div class="uk-navbar-left uk-animation-slide-right">
+                    <ul id="about" class="uk-navbar-nav" style="padding-left: 30px;">
                         <li class="uk-text-center">
                             <a class="uk-button-text" href="#aboutMe" uk-scroll>About Me</a>
                         </li>
@@ -51,11 +55,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="uk-navbar-right">
+                <div id="navRight" class="uk-navbar-right uk-animation-slide-right">
                     <ul class="uk-navbar-nav" style="padding-right: 30px;">
                         <li class="uk-active">
                             <a class="uk-text-center uk-button-text" href="#">Contact Information & Resume</a>
-                            <div class="uk-navbar-dropdown">
+                            <div id="dropdown" class="uk-navbar-dropdown" style="left: 0px !important">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-nav-header uk-text-center">Contact</li>
                                     <li class="uk-text-center"><a href="tel:6619929522">Phone: (661) 992-9522</a></li>
@@ -77,7 +81,7 @@
         </div>
     </header>
     <main>
-        <div class="uk-container" style="margin-top: 110px">
+        <div class="uk-container">
             <div id="aboutMe" class="uk-section uk-section-muted uk-dark"
                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
                 <div class="uk-align-center uk-card uk-card-default uk-card-hover uk-width-1-1"

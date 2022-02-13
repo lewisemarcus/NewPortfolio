@@ -1,0 +1,31 @@
+#hamburger {
+    display: none;
+}
+#aboutMe {
+    margin-top: 110px;
+}
+svg {
+   min-width: 20px !important;
+   min-height: 20px !important; 
+}
+@media screen and (max-width: 640px) {
+    #hamburger {
+        display: block;
+    }
+    #navRight {
+        margin-left: 20vw;
+    }
+}
+@media screen and (max-width: 430px) {
+    #navRight {
+        margin-left: 10vw;
+    }
+}
+@media screen and (max-width: 380px) {
+    #navRight {
+        margin-left: 0;
+    }
+    #about {
+        padding-left: 0 !important;
+    }
+}
