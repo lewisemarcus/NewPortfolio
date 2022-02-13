@@ -1,6 +1,9 @@
 #hamburger {
     display: none;
 }
+#navList {
+    padding-right: 30px;  
+}
 body {
     overflow-x: hidden;
 }
