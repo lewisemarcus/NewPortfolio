@@ -21,71 +21,81 @@
                 style="margin-bottom: 0px; padding-top: 20px; background-color: #f6f6f6;">
                 <span>Marcus Lewis: Developer's Portfolio</span>
             </h1>
-            <nav id="hamburger" class="uk-align-right uk-navbar uk-navbar-container" style="background-color: #f6f6f6;">
-                <div class="uk-navbar-left ">
-                    <a class="uk-navbar-toggle" style="padding-left: 100vw; background-color: #f6f6f6;"
-                        uk-toggle="target: #nav" uk-navbar-toggle-icon href="#"></a>
-                </div>
-            </nav>
-            <nav id="nav" class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
-                <div class="uk-navbar-left uk-animation-slide-right">
-                    <ul id="about" class="uk-navbar-nav" style="padding-left: 30px;">
-                        <li class="uk-text-center">
-                            <a class="uk-button-text" href="#aboutMe" uk-scroll>About Me</a>
-                        </li>
-                        <li>
-                            <a class="uk-button-text" href="#">Projects</a>
-                            <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
-                                    <div>
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-nav-header"
-                                                onmouseover="this.style.cursor = 'default';">Group
-                                            </li>
-                                            <li><a href="#pollutionMap" uk-scroll="offset: 150">Pollution Map</a></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-nav-header" style="justify-content:center;"
-                                                onmouseover="this.style.cursor = 'default';"
-                                                onmouseover="this.style.cursor = 'default';">Solo
-                                            </li>
-                                            <li><a href="#weather" uk-scroll="offset: 300">Weather Dashboard</a></li>
-                                            <li><a href="#planner" uk-scroll="offset: 300">Day Planner</a></li>
-                                            <li><a href="#quiz" uk-scroll="offset: 300">Code Quiz</a></li>
-                                            <li><a href="#password" uk-scroll="offset: 300">Password Generator</a></li>
-                                        </ul>
+            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200"
+                style="z-index: 10000;">
+                <nav id="hamburger" class="uk-align-right uk-navbar uk-navbar-container"
+                    style="background-color: #f6f6f6;">
+                    <div class="uk-navbar-left ">
+                        <a class="uk-navbar-toggle" style="padding-left: 100vw; background-color: #f6f6f6;"
+                            uk-toggle="target: #nav" uk-navbar-toggle-icon href="#"></a>
+                    </div>
+                </nav>
+
+                <nav id="nav" class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push"
+                    style="background-color: #f6f6f6;">
+                    <div class="uk-navbar-left uk-animation-slide-right">
+                        <ul id="about" class="uk-navbar-nav" style="padding-left: 30px;">
+                            <li class="uk-text-center">
+                                <a class="uk-button-text" href="#aboutMe" uk-scroll>About Me</a>
+                            </li>
+                            <li>
+                                <a class="uk-button-text" href="#">Projects</a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header" onmouseover="this.style.cursor = 'default';">
+                                                    Group
+                                                </li>
+                                                <li><a href="#pollutionMap" uk-scroll="offset: 150">Pollution Map</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header" style="justify-content:center;"
+                                                    onmouseover="this.style.cursor = 'default';"
+                                                    onmouseover="this.style.cursor = 'default';">Solo
+                                                </li>
+                                                <li><a href="#weather" uk-scroll="offset: 300">Weather Dashboard</a>
+                                                </li>
+                                                <li><a href="#planner" uk-scroll="offset: 300">Day Planner</a></li>
+                                                <li><a href="#quiz" uk-scroll="offset: 300">Code Quiz</a></li>
+                                                <li><a href="#password" uk-scroll="offset: 300">Password Generator</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div id="navRight" class="uk-navbar-right uk-animation-slide-right">
-                    <ul id="navList" class="uk-navbar-nav">
-                        <li class="uk-active">
-                            <a class="uk-text-center uk-button-text" href="#">Contact Information & Resume</a>
-                            <div id="dropdown" class="uk-navbar-dropdown" style="left: 0px !important">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-nav-header">Contact</li>
-                                    <li><a href="tel:6619929522">Phone: (661) 992-9522</a></li>
-                                    <li><a href="mailto: lewisemarcus@gmail.com">Email:
-                                            lewisemarcus@gmail.com</a></li>
-                                    <li><a href="https://github.com/lewisemarcus" target="_blank">GitHub Profile:
-                                            lewisemarcus</a>
-                        </li>
-                        <li class="uk-nav-divider"></li>
-                        <li class="uk-nav-header">Resume</li>
-                        <li class="uk-text-left"><a href="Files\Marcus_Lewis_Resume.pdf" target="_blank">Resume
-                                (PDF)</a></li>
-                    </ul>
-                </div>
-                </li>
-                </ul>
-        </div>
-        </nav>
-        <div class="uk-navbar-dropbar"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="navRight" class="uk-navbar-right uk-animation-slide-right">
+                        <ul id="navList" class="uk-navbar-nav">
+                            <li class="uk-active">
+                                <a class="uk-text-center uk-button-text" href="#">Contact Information & Resume</a>
+                                <div id="dropdown" class="uk-navbar-dropdown" style="left: 0px !important">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-nav-header">Contact</li>
+                                        <li><a href="tel:6619929522">Phone: (661) 992-9522</a></li>
+                                        <li><a href="mailto: lewisemarcus@gmail.com">Email:
+                                                lewisemarcus@gmail.com</a></li>
+                                        <li><a href="https://github.com/lewisemarcus" target="_blank">GitHub Profile:
+                                                lewisemarcus</a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="uk-nav-header">Resume</li>
+                                        <li class="uk-text-left"><a href="Files\Marcus_Lewis_Resume.pdf"
+                                                target="_blank">Resume
+                                                (PDF)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="uk-navbar-dropbar"></div>
+            </div>
         </div>
     </header>
     <main>
@@ -93,7 +103,7 @@
             <div id="aboutMe" class="uk-section uk-dark"
                 style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: #f6f6f6;">
                 <div class="uk-align-center uk-card uk-card-default uk-card-hover uk-width-1-1"
-                    style="max-width: 90%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;"
+                    style="max-width: 90%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;"
                     uk-scrollspy="cls:uk-animation-fade">
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -153,13 +163,13 @@
             <div class="uk-section uk-section-default uk-dark">
                 <div uk-scrollspy="cls:uk-animation-slide-top-medium"
                     class="uk-card uk-card-small uk-card-hover uk-card-default"
-                    style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                    <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Group</div>
+                    style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                     <div class="uk-card-body uk-background-muted"
                         style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                         <h3 class="uk-padding-small uk-text-center uk-text-break"><a
                                 class="uk-card-title uk-button uk-button-text"
-                                onmouseover="this.style.cursor = 'default';">Bluer Skies: Air Quality Index Map</a>
+                                onmouseover="this.style.cursor = 'default';" style="position: static;">Bluer Skies: Air
+                                Quality Index Map</a>
                         </h3>
                         <p class="uk-text-center">This website displays a scrollable/interactive map with a grid of
                             colored points
@@ -167,7 +177,8 @@
                             It uses (quasi) unlimited free APIs.</p>
                         <div class="uk-card-footer uk-text-center">
                             <a href="https://github.com/lewisemarcus/PollutionMap" target="_blank"
-                                class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
+                                class="uk-button uk-text-primary uk-button-text" style="position: static;">GitHub Repo
+                                Link</a>
                         </div>
                     </div>
                     <div class="uk-card-media-bottom uk-button">
@@ -187,21 +198,21 @@
                         <div>
                             <div id="weather" uk-scrollspy="cls:uk-animation-slide-left"
                                 class="uk-card uk-card-small uk-card-hover uk-card-default"
-                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                                <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Solo
-                                </div>
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                                     <h3 class="uk-padding-small uk-text-break"><a
                                             class="uk-card-title uk-button-text uk-button"
-                                            onmouseover="this.style.cursor = 'default';">Weather Dashboard: See Any
+                                            onmouseover="this.style.cursor = 'default';"
+                                            style="position: static;">Weather Dashboard: See Any
                                             City's 5 Day Forecast</a>
                                     </h3>
                                     <p>This web application allows a user to search any city of their choosing and
                                         receive a 5-Day forecast relative to the time zone of the city.</p>
                                     <div class="uk-card-footer uk-text-center">
                                         <a href="https://github.com/lewisemarcus/WeatherDashboard" target="_blank"
-                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
+                                            class="uk-button uk-text-primary uk-button-text"
+                                            style="position: static;">GitHub Repo Link</a>
                                     </div>
                                 </div>
                                 <div class="uk-card-media-bottom uk-button">
@@ -214,20 +225,20 @@
                         <div>
                             <div id="planner" uk-scrollspy="cls:uk-animation-slide-right"
                                 class="uk-card uk-card-default uk-card-hover uk-card-small"
-                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                                    <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">
-                                        Solo</div>
                                     <h3 class="uk-padding-small uk-text-break"><a
                                             class="uk-button uk-button-text uk-card-title"
-                                            onmouseover="this.style.cursor = 'default';">Day Planner: Plan Your Week</a>
+                                            onmouseover="this.style.cursor = 'default';" style="position: static;">Day
+                                            Planner: Plan Your Week</a>
                                     </h3>
                                     <p>The Day Planner website will allow a user to edit a daily planner that spans most
                                         hours of the work-day(9AM-6PM).</p>
                                     <div class="uk-card-footer uk-text-center">
                                         <a href="https://github.com/lewisemarcus/Day-Planner" target="_blank"
-                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
+                                            class="uk-button uk-text-primary uk-button-text"
+                                            style="position: static;">GitHub Repo Link</a>
                                     </div>
                                 </div>
                                 <div class="uk-card-media-bottom uk-button">
@@ -240,14 +251,13 @@
                         <div>
                             <div id="quiz" uk-scrollspy="cls:uk-animation-slide-left"
                                 class="uk-card uk-card-small uk-card-hover uk-card-default"
-                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                                <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">Solo
-                                </div>
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                                     <h3 class="uk-padding-small uk-text-break"><a
                                             class="uk-button-text uk-button uk-card-title"
-                                            onmouseover="this.style.cursor = 'default';">Code Quiz: Test Your JS
+                                            onmouseover="this.style.cursor = 'default';" style="position: static;">Code
+                                            Quiz: Test Your JS
                                             Knowledge</a>
                                     </h3>
                                     <p>In the Code Quiz web application, a user is able to take a short, timed quiz
@@ -255,7 +265,8 @@
                                         left, which corresponds to a user's score.</p>
                                     <div class="uk-card-footer uk-text-center">
                                         <a href="https://github.com/lewisemarcus/CodeQuiz" target="_blank"
-                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
+                                            class="uk-button uk-text-primary uk-button-text"
+                                            style="position: static;">GitHub Repo Link</a>
                                         <br>
                                         <br>
                                     </div>
@@ -270,20 +281,20 @@
                         <div>
                             <div id="password" uk-scrollspy="cls:uk-animation-slide-right"
                                 class="uk-card uk-card-default uk-card-hover uk-card-small"
-                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+                                style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                 <div class="uk-card-body uk-background-muted"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                                    <div class="uk-card-badge uk-label" onmouseover="this.style.cursor = 'default';">
-                                        Solo</div>
                                     <h3 class="uk-text-break uk-padding-small"><a
                                             class="uk-button uk-card-title uk-button-text"
-                                            onmouseover="this.style.cursor = 'default';">Password Generator: Secure
+                                            onmouseover="this.style.cursor = 'default';"
+                                            style="position: static;">Password Generator: Secure
                                             Password Generator</a></h3>
                                     <p>The Password Generator web application will allow a user to create a random
                                         password based on parameters chosen by the user.</p>
                                     <div class="uk-card-footer uk-text-center">
                                         <a href="https://github.com/lewisemarcus/PasswordGenerator" target="_blank"
-                                            class="uk-button uk-text-primary uk-button-text">GitHub Repo Link</a>
+                                            class="uk-button uk-text-primary uk-button-text"
+                                            style="position: static;">GitHub Repo Link</a>
                                     </div>
                                 </div>
                                 <div class="uk-card-media-bottom uk-button">

@@ -10,6 +10,10 @@
 }
 body {
     overflow-x: hidden;
+    z-index: 0;
+}
+header {
+    z-index: 1000;
 }
 #aboutMe {
     margin-top: 110px;
