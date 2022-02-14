@@ -5,6 +5,9 @@
 #hamburger {
     display: none;
 }
+h3 {
+    cursor: default;
+}
 #navList {
     padding-right: 30px;  
 }
@@ -14,6 +17,10 @@ body {
 }
 header {
     z-index: 1000;
+}
+#particles-js {
+    height: 100%;
+    background: #f00;
 }
 #aboutMe {
     margin-top: 110px;

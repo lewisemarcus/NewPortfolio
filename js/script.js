@@ -9,9 +9,6 @@ window.onload = function () {
     mediaQuery(mobileSize)
 }
 mobileSize.addEventListener("change", mediaQuery)
-document.getElementById('aboutMe').addEventListener("click", function () {
-    document.getElementById('aboutMe').removeAttribute('style', 'margin-top: 100px') 
-})
 $(document).ready(function() {
     if(window.location.hash.length > 0) {
         window.scrollTo(0, $(window.location.hash).offset().top);
