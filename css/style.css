@@ -11,6 +11,9 @@ h3 {
 #navList {
     padding-right: 30px;  
 }
+#nav {
+    z-index: 1000;
+}
 body {
     overflow-x: hidden;
     z-index: 0;
@@ -19,8 +22,11 @@ header {
     z-index: 1000;
 }
 #particles-js {
+    background: #ffff;
+    width: 100%;
+    position: absolute;
     height: 100%;
-    background: #f00;
+    z-index: -100;
 }
 #aboutMe {
     margin-top: 110px;
