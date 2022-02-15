@@ -124,7 +124,7 @@
                     <div class="uk-card-body">
                         <h3 class="uk-card-title uk-text-break" onmouseover="this.style.cursor = 'default';">Education
                         </h3>
-                        <p>Hello, my name is Marcus Lewis, and welcome to my Portfolio webpage,
+                        <p style="cursor: default">Hello, my name is Marcus Lewis, and welcome to my Portfolio webpage,
                             where you will find my most recent and what I consider my best works in regard to
                             development.
                             My education consists of a Bachelor's degree in English, received from the University of
@@ -134,7 +134,7 @@
                         </p>
                         <h3 class="uk-card-title uk-text-break" onmouseover="this.style.cursor = 'default';">Work
                             Experience</h3>
-                        <p>
+                        <p style="cursor: default">
                             My work experience began in 2013, when I first landed an internship as a Programming
                             Assistant at Lockheed Martin.
                             Although short, I was able to grasp the basics of CATIA and C++. My line of work shifted
@@ -174,7 +174,7 @@
                                 Air
                                 Quality Index Map</a>
                         </h3>
-                        <p class="uk-text-center">This website displays a scrollable/interactive map with a grid of
+                        <p style="cursor: default" class="uk-text-center">This website displays a scrollable/interactive map with a grid of
                             colored points
                             representing fine particle pollution levels.
                             It uses (quasi) unlimited free APIs.</p>
@@ -188,13 +188,14 @@
                         <div class="uk-child-width-1-1@m" uk-grid>
                             <div>
                                 <div>
-                                    <a href="https://lewisemarcus.github.io/PollutionMap/" target="_blank">
+                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/PollutionMap/" target="_blank">
                                         <img src="images/Capture.PNG" alt="Photo of Bluer Skies website.">
+                                        <div class="uk-overlay uk-overlay-primary"
+                                            style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                                            <p class="uk-button-text" style="position: static;">Go To Project.</p>
+                                        </div>
                                     </a>
-                                    <div class="uk-overlay uk-overlay-primary"
-                                        style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                                        <p>Go To Project.</p>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -205,23 +206,21 @@
                 <br>
                 <div class="uk-section uk-dark"
                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: #f6f6f6; margin-top: 50px;">
-                    <div class="uk-padding uk-flex-center uk-child-width-expand@s uk-text-center" uk-grid>
-                        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                    <div class="uk-padding-small uk-flex-center uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div class="uk-child-width-1-4@m" uk-grid>
                             <div>
                                 <div id="weather" uk-scrollspy="cls:uk-animation-slide-left"
                                     class="uk-card uk-card-small uk-card-hover uk-card-default"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
-                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
-                                                style="cursor: default;">Weather Dashboard: See
-                                                Any
-                                                City's 5 Day Forecast</a>
+                                                style="cursor: default;">Weather Dashboard: 5-Day Forecart for Cities</a>
                                         </h3>
-                                        <p>This web application allows a user to search any city of their choosing and
+                                        <p style="cursor: default">This web application allows a user to search any city of their choosing and
                                             receive a 5-Day forecast relative to the time zone of the city.</p>
                                         <div class="uk-card-footer uk-text-center">
-                                            <a href="https://github.com/lewisemarcus/WeatherDashboard" target="_blank"
+                                            <a  href="https://github.com/lewisemarcus/WeatherDashboard" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
                                                 Link</a>
                                         </div>
@@ -230,15 +229,15 @@
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a href="https://lewisemarcus.github.io/WeatherDashboard/"
+                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/WeatherDashboard/"
                                                         target="_blank">
                                                         <img src="images/WeatherDash.png"
                                                             alt="Photo of Weather Dashboard website.">
+                                                        <div class="uk-overlay uk-overlay-primary"
+                                                            style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                                                            <p class="uk-button-text" style="position: static;">Go To Project.</p>
+                                                        </div>
                                                     </a>
-                                                    <div class="uk-overlay uk-overlay-primary"
-                                                        style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                                                        <p>Go To Project.</p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -250,14 +249,14 @@
                                     class="uk-card uk-card-default uk-card-hover uk-card-small"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
-                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 76px">
+                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
-                                                style="cursor: default;">Day
-                                                Planner: Plan Your Week</a>
+                                                style="cursor: default;">Work Day
+                                                Scheduler: Plan Out Your Week</a>
                                         </h3>
-                                        <p>The Day Planner website will allow a user to edit a daily planner that spans
+                                        <p style="cursor: default">The Day Planner website will allow a user to edit a daily planner that spans
                                             most
-                                            hours of the work-day(9AM-6PM).</p>
+                                            hours of the work-day(9AM-6PM). The data the user enters will be stored to their local storage for future reference and editing.</p>
                                         <div class="uk-card-footer uk-text-center">
                                             <a href="https://github.com/lewisemarcus/Day-Planner" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
@@ -268,15 +267,15 @@
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a href="https://lewisemarcus.github.io/Day-Planner/"
+                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/Day-Planner/"
                                                         target="_blank">
                                                         <img src="images/DayPlanner.png"
                                                             alt="Photo of Day Planner website.">
+                                                        <div class="uk-overlay uk-overlay-primary"
+                                                            style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                                                            <p class="uk-button-text" style="position: static;">Go To Project.</p>
+                                                        </div>
                                                     </a>
-                                                    <div class="uk-overlay uk-overlay-primary"
-                                                        style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                                                        <p>Go To Project.</p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -288,13 +287,13 @@
                                     class="uk-card uk-card-small uk-card-hover uk-card-default"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
-                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
                                                 style="cursor: default;">Code
                                                 Quiz: Test Your JS
                                                 Knowledge</a>
                                         </h3>
-                                        <p>In the Code Quiz web application, a user is able to take a short, timed quiz
+                                        <p style="cursor: default">In the Code Quiz web application, a user is able to take a short, timed quiz
                                             testing their knowledge of JavaScript. Incorrect answers will decrease the
                                             time
                                             left, which corresponds to a user's score.</p>
@@ -302,22 +301,20 @@
                                             <a href="https://github.com/lewisemarcus/CodeQuiz" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
                                                 Link</a>
-                                            <br>
-                                            <br>
                                         </div>
                                     </div>
                                     <div class="uk-card-media-bottom uk-button" style="padding: 0px">
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a href="https://lewisemarcus.github.io/CodeQuiz/" target="_blank">
+                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/CodeQuiz/" target="_blank">
                                                         <img src="images/CodeQuiz.png"
                                                             alt="Photo of Code Quiz website.">
+                                                        <div class="uk-overlay uk-overlay-primary"
+                                                            style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                                                            <p class="uk-button-text" style="position: static;">Go To Project.</p>
+                                                        </div>
                                                     </a>
-                                                    <div class="uk-overlay uk-overlay-primary"
-                                                        style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                                                        <p>Go To Project.</p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -329,13 +326,12 @@
                                     class="uk-card uk-card-default uk-card-hover uk-card-small"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
-                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 52px">
+                                        style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
                                                 style="cursor: default;">Password Generator:
-                                                Secure
-                                                Password Generator</a></h3>
-                                        <p>The Password Generator web application will allow a user to create a random
-                                            password based on parameters chosen by the user.</p>
+                                                Create Secure Passwords</a></h3>
+                                        <p style="cursor: default">The Password Generator web application will allow a user to create a random
+                                            password based on parameters chosen by the user. The user will enter their choices in alert boxes.</p>
                                         <div class="uk-card-footer uk-text-center">
                                             <a href="https://github.com/lewisemarcus/PasswordGenerator" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
@@ -346,15 +342,15 @@
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a href="https://lewisemarcus.github.io/PasswordGenerator/"
+                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/PasswordGenerator/"
                                                         target="_blank">
                                                         <img src="images/PasswordGenerator.png"
                                                             alt="Photo of Password Generator website.">
+                                                        <div class="uk-overlay uk-overlay-primary"
+                                                            style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                                                            <p class="uk-button-text" style="position: static;">Go To Project.</p>
+                                                        </div>
                                                     </a>
-                                                    <div class="uk-overlay uk-overlay-primary"
-                                                        style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                                                        <p>Go To Project.</p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -365,7 +361,8 @@
                     </div>
                 </div>
             </div>
-            <a class="uk-align-center uk-text-center" style="margin-bottom: 0px; text-decoration: none;" href="#header" uk-totop uk-scroll>
+            <a class="uk-align-center uk-text-center" style="margin-bottom: 0px; text-decoration: none;" href="#header"
+                uk-totop uk-scroll>
                 <p class="uk-text-muted uk-text-center" style="margin-top: 0px;">(To
                     Top)</p>
             </a>
