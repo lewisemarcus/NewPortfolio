@@ -8,6 +8,11 @@
 h3 {
     cursor: default;
 }
+#dropbars {
+    transition-property: height;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
 #navList {
     padding-right: 30px;  
 }
