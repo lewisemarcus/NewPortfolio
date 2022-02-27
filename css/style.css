@@ -8,7 +8,7 @@
 h3 {
     cursor: default;
 }
-#dropbars {
+#projects:hover {
     transition-property: height;
     transition-duration: 200ms;
     transition-timing-function: linear;
