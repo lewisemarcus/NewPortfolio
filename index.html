@@ -49,6 +49,8 @@
                                                 <li class="uk-nav-header" onmouseover="this.style.cursor = 'default';">
                                                     Group
                                                 </li>
+                                                <li><a href="#bugTracker" uk-scroll="offset: 200">Bug Tracker</a>
+                                                </li>
                                                 <li><a href="#pollutionMap" uk-scroll="offset: 200">Pollution Map</a>
                                                 </li>
                                             </ul>
@@ -59,12 +61,10 @@
                                                     onmouseover="this.style.cursor = 'default';"
                                                     onmouseover="this.style.cursor = 'default';">Solo
                                                 </li>
-                                                <li><a href="#weather" uk-scroll="offset: 350">Weather Dashboard</a>
+                                                <li><a href="#tech" uk-scroll="offset: 350">Tech Blog</a>
                                                 </li>
-                                                <li><a href="#planner" uk-scroll="offset: 350">Day Planner</a></li>
-                                                <li><a href="#quiz" uk-scroll="offset: 350">Code Quiz</a></li>
-                                                <li><a href="#password" uk-scroll="offset: 350">Password Generator</a>
-                                                </li>
+                                                <li><a href="#note" uk-scroll="offset: 350">Note Taker</a></li>
+                                                <li><a href="#weather" uk-scroll="offset: 350">Weather Dashboard</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -160,7 +160,7 @@
                         <br>
                     </div>
                 </div>
-                <div id="pollutionMap"></div>
+                <div id="bugTracker"></div>
             </div>
             <br>
             <br>
@@ -172,16 +172,14 @@
                     <div class="uk-card-body uk-background-muted"
                         style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                         <h3 class="uk-text-center uk-text-break" style="position: static;"><a class="uk-card-title"
-                                style="position: static; cursor: default;">Bluer Skies:
-                                Air
-                                Quality Index Map</a>
+                                style="position: static; cursor: default;">Bug Zapper: Bug Tracker Application</a>
                         </h3>
-                        <p style="cursor: default" class="uk-text-center">This website displays a scrollable/interactive map with a grid of
-                            colored points
-                            representing fine particle pollution levels.
-                            It uses (quasi) unlimited free APIs.</p>
+                        <p style="cursor: default" class="uk-text-center">
+                            This website allows a user to create an account and manage bugs relating to specific
+                            projects. A user can also add contributors to the project for assistance with management and updating the bugs.
+                        </p>
                         <div class="uk-card-footer uk-text-center">
-                            <a href="https://github.com/lewisemarcus/PollutionMap" target="_blank"
+                            <a href="https://github.com/lewisemarcus/bugTracker" target="_blank"
                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
                                 Link</a>
                         </div>
@@ -190,8 +188,8 @@
                         <div class="uk-child-width-1-1@m" uk-grid>
                             <div>
                                 <div>
-                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/PollutionMap/" target="_blank">
-                                        <img src="images/Capture.PNG" alt="Photo of Bluer Skies website.">
+                                    <a style="text-decoration: none !important" href="http://bug-zapper-app.herokuapp.com/" target="_blank">
+                                        <img src="images/bugTracker.png" alt="Photo of Bug Zapper website.">
                                         <div class="uk-overlay uk-overlay-primary"
                                             style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
                                             <p class="uk-button-text" style="position: static;">Go To Project.</p>
@@ -211,18 +209,17 @@
                     <div class="uk-padding-small uk-flex-center uk-child-width-expand@s uk-text-center" uk-grid>
                         <div class="uk-child-width-1-4@m" uk-grid>
                             <div>
-                                <div id="weather" uk-scrollspy="cls:uk-animation-slide-left"
+                                <div id="pollutionMap" uk-scrollspy="cls:uk-animation-slide-left"
                                     class="uk-card uk-card-small uk-card-hover uk-card-default"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
                                         style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
-                                                style="cursor: default;">Weather Dashboard: 5-Day Forecart for Cities</a>
+                                                style="cursor: default;">Bluer Skies: Air Quality Index Map</a>
                                         </h3>
-                                        <p style="cursor: default">This web application allows a user to search any city of their choosing and
-                                            receive a 5-Day forecast relative to the time zone of the city.</p>
+                                        <p style="cursor: default">This website displays a scrollable/interactive map with a grid of colored points representing fine particle pollution levels. It uses (quasi) unlimited free APIs.</p>
                                         <div class="uk-card-footer uk-text-center">
-                                            <a  href="https://github.com/lewisemarcus/WeatherDashboard" target="_blank"
+                                            <a  href="https://github.com/lewisemarcus/PollutionMap" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
                                                 Link</a>
                                         </div>
@@ -231,9 +228,9 @@
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/WeatherDashboard/"
+                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/PollutionMap/"
                                                         target="_blank">
-                                                        <img src="images/WeatherDash.png"
+                                                        <img src="images/Capture.PNG"
                                                             alt="Photo of Weather Dashboard website.">
                                                         <div class="uk-overlay uk-overlay-primary"
                                                             style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
@@ -247,20 +244,17 @@
                                 </div>
                             </div>
                             <div>
-                                <div id="planner" uk-scrollspy="cls:uk-animation-slide-right"
+                                <div id="tech" uk-scrollspy="cls:uk-animation-slide-right"
                                     class="uk-card uk-card-default uk-card-hover uk-card-small"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
                                         style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
-                                                style="cursor: default;">Work Day
-                                                Scheduler: Plan Out Your Week</a>
+                                                style="cursor: default;">Tech Blog: Create Blogs and Leave Comments</a>
                                         </h3>
-                                        <p style="cursor: default">The Day Planner website will allow a user to edit a daily planner that spans
-                                            most
-                                            hours of the work-day(9AM-6PM). The data the user enters will be stored to their local storage for future reference and editing.</p>
+                                        <p style="cursor: default">The Tech Blog application allows a user to create an account, which enables them to then access the blogs hosted  on the site. A user can add, update, and delete blogs as well as comments posted under different user's blogs.</p>
                                         <div class="uk-card-footer uk-text-center">
-                                            <a href="https://github.com/lewisemarcus/Day-Planner" target="_blank"
+                                            <a href="https://github.com/lewisemarcus/TechBlog" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
                                                 Link</a>
                                         </div>
@@ -269,9 +263,9 @@
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/Day-Planner/"
+                                                    <a style="text-decoration: none !important" href="https://agile-dawn-55678.herokuapp.com/"
                                                         target="_blank">
-                                                        <img src="images/DayPlanner.png"
+                                                        <img src="images/techBlog.png"
                                                             alt="Photo of Day Planner website.">
                                                         <div class="uk-overlay uk-overlay-primary"
                                                             style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
@@ -285,22 +279,17 @@
                                 </div>
                             </div>
                             <div>
-                                <div id="quiz" uk-scrollspy="cls:uk-animation-slide-left"
+                                <div id="note" uk-scrollspy="cls:uk-animation-slide-left"
                                     class="uk-card uk-card-small uk-card-hover uk-card-default"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
                                         style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
-                                                style="cursor: default;">Code
-                                                Quiz: Test Your JS
-                                                Knowledge</a>
+                                                style="cursor: default;">Note Taker: Take Notes Anywhere</a>
                                         </h3>
-                                        <p style="cursor: default">In the Code Quiz web application, a user is able to take a short, timed quiz
-                                            testing their knowledge of JavaScript. Incorrect answers will decrease the
-                                            time
-                                            left, which corresponds to a user's score.</p>
+                                        <p style="cursor: default">In the Note Taker application, a user is able to create, update, and delete notes through database interaction.</p>
                                         <div class="uk-card-footer uk-text-center">
-                                            <a href="https://github.com/lewisemarcus/CodeQuiz" target="_blank"
+                                            <a href="https://github.com/lewisemarcus/NoteTaker" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
                                                 Link</a>
                                         </div>
@@ -309,8 +298,8 @@
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/CodeQuiz/" target="_blank">
-                                                        <img src="images/CodeQuiz.png"
+                                                    <a style="text-decoration: none !important" href="https://secure-fortress-62772.herokuapp.com/" target="_blank">
+                                                        <img src="images/noteTaker.png"
                                                             alt="Photo of Code Quiz website.">
                                                         <div class="uk-overlay uk-overlay-primary"
                                                             style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
@@ -324,18 +313,16 @@
                                 </div>
                             </div>
                             <div>
-                                <div id="password" uk-scrollspy="cls:uk-animation-slide-right"
+                                <div id="weather" uk-scrollspy="cls:uk-animation-slide-right"
                                     class="uk-card uk-card-default uk-card-hover uk-card-small"
                                     style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; position: static;">
                                     <div class="uk-card-body uk-background-muted"
                                         style="border-top-left-radius: 5px; border-top-right-radius: 5px; padding-bottom: 0px;">
                                         <h3 class="uk-text-break" style="position: static;"><a class="uk-card-title"
-                                                style="cursor: default;">Password Generator:
-                                                Create Secure Passwords</a></h3>
-                                        <p style="cursor: default">The Password Generator web application will allow a user to create a random
-                                            password based on parameters chosen by the user. The user will enter their choices in alert boxes.</p>
+                                                style="cursor: default;">Weather Dashboard: 5-Day Forecart for Cities</a></h3>
+                                        <p style="cursor: default">This web application allows a user to search any city of their choosing and receive a 5-Day forecast relative to the time zone of the city.</p>
                                         <div class="uk-card-footer uk-text-center">
-                                            <a href="https://github.com/lewisemarcus/PasswordGenerator" target="_blank"
+                                            <a href="https://github.com/lewisemarcus/WeatherDashboard" target="_blank"
                                                 class="uk-button uk-text-primary" style="position: static;">GitHub Repo
                                                 Link</a>
                                         </div>
@@ -344,9 +331,9 @@
                                         <div class="uk-child-width-1-1@m" uk-grid>
                                             <div>
                                                 <div>
-                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/PasswordGenerator/"
+                                                    <a style="text-decoration: none !important" href="https://lewisemarcus.github.io/WeatherDashboard/"
                                                         target="_blank">
-                                                        <img src="images/PasswordGenerator.png"
+                                                        <img src="images/WeatherDash.png"
                                                             alt="Photo of Password Generator website.">
                                                         <div class="uk-overlay uk-overlay-primary"
                                                             style="padding-bottom: 30px; padding-top: 30px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
