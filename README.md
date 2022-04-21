@@ -11,7 +11,7 @@ There are three main sections of the body, the 'About Me', 'Group Projects', and
 ## Installation
 No installation required.
 
-Link to Website: https://lewisemarcus.github.io/NewPortfolio/
+Link to Website: https://marcuslewis.dev/
 
 Built with HTML and CSS
 ![Photo of Website](images/Portfolio.png)
